@@ -44,8 +44,8 @@ public class DarwinGUI extends JFrame {
   //the height of the world panel
   private static final int WPY = WORLDY+CSIZE;
   //default creature files
-  private static String [] DCRITTERS = {"src/Flytrap.txt","src/Food.txt", 
-                                        "src/Hop.txt", "src/Rover.txt"};
+  private static String [] DCRITTERS = {"src/Darwin/Flytrap.txt","src/Darwin/Food.txt", 
+                                        "src/Darwin/Hop.txt", "src/Darwin/Rover.txt"};
   //default number of creatures
   private static int NUMCRITTERS = 10;
   //maximum delay for "continue" option
@@ -597,7 +597,7 @@ public class DarwinGUI extends JFrame {
   /** determines the actions to take for each click of the 
       Add Creatures button */
   private void addCreatures(ActionEvent evt) {
-     String file = JOptionPane.showInputDialog("Enter creature file name: ");
+     String file = JOptionPane.showInputDialog("Enter creature file name (please include the .txt file extension): ");
      if (file != null) {
        // The file must be in the src directory
        file = "src" + File.separatorChar + file;
